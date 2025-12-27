@@ -1448,14 +1448,13 @@
                     const formData = new FormData(this);
                     const formStatus = document.getElementById('formStatus');
                     
-                    // Simulate form submission (replace with actual endpoint)
                     formStatus.textContent = 'Thank you! Your message has been sent successfully.';
                     formStatus.className = 'form-status success';
                     contactForm.reset();
                     
-                    // Uncomment and replace with your actual Google Apps Script URL
                     
-                    const scriptURL = 'https://script.google.com/macros/s/YOUR_GOOGLE_APPS_SCRIPT_ID/exec';
+                    
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcO58CEcsdPQoy0jTZczrsLMu7wtyNVVobdBhrKrPDuYtamsVFNB0RfV0Phrqtlzc/exec';
                     
                     fetch(scriptURL, { method: 'POST', body: formData })
                     .then(response => {
@@ -1542,3 +1541,4 @@
 </body>
 
 </html>
+
